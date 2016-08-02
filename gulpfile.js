@@ -14,6 +14,7 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.styles([
     	'../../../vendor/semantic/ui/dist/semantic.min.css',
+    	'master.css',
     ])
     .scripts([
     	'../../../vendor/components/jquery/jquery.min.js',
