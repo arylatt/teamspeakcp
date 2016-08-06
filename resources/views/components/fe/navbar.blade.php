@@ -1,6 +1,6 @@
 <div class="ui top fixed menu">
 	<div class="header item">
-		TeamSpeakCP
+		{{ config('app.sitename') }}
 	</div>
 	<a id="nav_home" class="item" href="/">
 		<i class="home icon"></i>
