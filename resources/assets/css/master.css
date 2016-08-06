@@ -1,0 +1,39 @@
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,1)), url(/img/background.jpg);
+	background-size: cover;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.errorPage{
+	padding-top: 30px;
+}
+
+.top.fixed.menu{
+	min-height: 40px;
+}
+
+.pageWithTopNav{
+	padding-top: 60px;
+}
+
+.inverted{
+	color:#fff;
+}
+
+.adminPanel{
+	background: #ffffff;
+}
+
+.adminPanel .pusher{
+	padding: 20px;
+	margin-right: 260px;
+}
+
+.ui.basic.page-content.segment {
+	text-align: left;
+}
+
+.ui.inverted.page-footer.header a, .ui.inverted.page-footer.header a:hover {
+	color: white;
+}
