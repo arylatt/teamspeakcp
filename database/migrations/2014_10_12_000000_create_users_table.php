@@ -3,30 +3,30 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
+use App\Models\User;
+
 class CreateUsersTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
+            $table->increments('user_id');
+            $table->string('user_username')->unique();
+            $table->string('user_email')->unique();
+            $table->string('user_password');
+            $table->string('user_name');
             $table->rememberToken();
             $table->timestamps();
         });
-    }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+        User::create([
+            'user_username' => 'admin',
+            'user_email' => 'admin@localhost',
+            'user_password' => bcrypt('admin'),
+            'user_name' => 'Administrator'
+        ]);
+    }
+    
     public function down()
     {
         Schema::drop('users');
