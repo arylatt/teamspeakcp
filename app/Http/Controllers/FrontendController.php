@@ -10,4 +10,9 @@ class FrontendController extends Controller
     {
         return view('fe.index');
     }
+
+    public function Login(Request $req)
+    {
+    	return view('fe.login', ['title' => 'Log In']);
+    }
 }

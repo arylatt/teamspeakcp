@@ -37,3 +37,19 @@ body{
 .ui.inverted.page-footer.header a, .ui.inverted.page-footer.header a:hover {
 	color: white;
 }
+
+.right.aligned {
+	text-align: right;
+}
+
+.left.aligned {
+	text-align: left;
+}
+
+.center.aligned {
+	text-align: center;
+}
+
+.ui.label {
+	border-radius: 0px;
+}

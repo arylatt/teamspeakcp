@@ -2,7 +2,7 @@
 	<head>
 		<title>
 			@if(isset($title))
-				{{ $title }}
+				{{ $title }} - TeamSpeakCP
 			@else
 				TeamSpeakCP
 			@endif
