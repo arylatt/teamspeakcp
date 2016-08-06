@@ -2,9 +2,9 @@
 	<head>
 		<title>
 			@if(isset($title))
-				{{ $title }} - TeamSpeakCP
+				{{ $title }} - {{ config('app.sitename') }}
 			@else
-				TeamSpeakCP
+				{{ config('app.sitename') }}
 			@endif
 		</title>
 		<link rel="stylesheet" type="text/css" href="/css/all.css" />
