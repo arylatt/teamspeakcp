@@ -1,9 +1,8 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-
-use App\Models\User;
 
 class CreateUsersTable extends Migration
 {
@@ -21,12 +20,12 @@ class CreateUsersTable extends Migration
 
         User::create([
             'user_username' => 'admin',
-            'user_email' => 'admin@localhost',
+            'user_email'    => 'admin@localhost',
             'user_password' => bcrypt('admin'),
-            'user_name' => 'Administrator'
+            'user_name'     => 'Administrator',
         ]);
     }
-    
+
     public function down()
     {
         Schema::drop('users');
