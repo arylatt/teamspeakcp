@@ -19,6 +19,7 @@ elixir(function(mix) {
     .scripts([
     	'../../../vendor/components/jquery/jquery.min.js',
     	'../../../vendor/semantic/ui/dist/semantic.min.js',
+    	'master.js',
     ])
     .copy('vendor/semantic/ui/dist/themes', 'public/css/themes');
 });

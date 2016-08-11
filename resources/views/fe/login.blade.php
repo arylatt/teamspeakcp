@@ -21,11 +21,12 @@
 				</div>
 			</div>
 			<div class="right aligned field">
-				<button id="login" class="ui orange icon button">
+				<input type="hidden" id="_token" value="{{ csrf_token() }}" />
+				<button id="forgotPassBtn" class="ui orange icon button">
 					Forgot Details
 					<i class="question icon"></i>
 				</button>
-				<button id="login" class="ui green icon button">
+				<button id="loginBtn" class="ui green icon button">
 					Log In
 					<i class="sign in icon"></i>
 				</button>
