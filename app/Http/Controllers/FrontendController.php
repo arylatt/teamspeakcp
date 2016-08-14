@@ -15,6 +15,10 @@ class FrontendController extends Controller
 
     public function Login(Request $req)
     {
+        if (Auth::check())
+        {
+            return redirect('/dash');
+        }
         return view('fe.login', ['title' => 'Log In']);
     }
 
