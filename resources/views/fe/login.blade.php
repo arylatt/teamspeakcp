@@ -5,6 +5,13 @@
 		Log In
 	</h1>
 	<div class="inverted">
+		<div id="loginError" class="ui icon error message" style="display: none;">
+			<i class="warning sign icon"></i>
+			<div class="content">
+				<div class="header">Uh Oh!</div>
+				<p>That username and password combination isn't right... Please try again or click 'Forgot Details'<span></span></p>
+			</div>
+		</div>
 		<div class="ui form segment">
 			<div class="field">
 				<label for="user">Username</label>
